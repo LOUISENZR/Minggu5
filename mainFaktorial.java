@@ -15,14 +15,22 @@ public static void main(String[] args) {
     }
     System.out.println("==========================================");
     System.out.println("Hasil Faktorial Dengan Brute Force");
+    long start1 = 0, end1 = 0;
+    start1 = System.nanoTime();
     for (int i = 0; i< elemen; i++){
         System.out.println("Faktorial Dari Nilai "+ fk[i].nilai+" adalah "+ fk[i].faktorialBF(fk[i].nilai));
     }
+    end1 = System.nanoTime();
+    System.out.println("Waktu Durasi Brute Force : "+(end1-start1));
     System.out.println("==========================================");
+    long start2 = 0, end2 = 0;
+    start2 = System.nanoTime();
     System.out.println("Hasil Faktorial Dengan Brute Force");
     for (int i = 0; i< elemen; i++){
         System.out.println("Faktorial Dari Nilai "+ fk[i].nilai+" adalah "+ fk[i].faktorialDC(fk[i].nilai));
     }
+    end2 = System.nanoTime();
+    System.out.println("Waktu Durasi Devide and Conquer : "+(end2-start2));
     System.out.println("==========================================");
 }    
 }
