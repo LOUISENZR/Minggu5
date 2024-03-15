@@ -1,4 +1,4 @@
-package Pertemuan5;
+package Minggu5;
 import java.util.Scanner;
 public class mainFaktorial {
 public static void main(String[] args) {
@@ -30,7 +30,7 @@ public static void main(String[] args) {
         System.out.println("Faktorial Dari Nilai "+ fk[i].nilai+" adalah "+ fk[i].faktorialDC(fk[i].nilai));
     }
     end2 = System.nanoTime();
-    System.out.println("Waktu Durasi Devide and Conquer : "+(end2-start2));
+    System.out.println("Waktu Durasi Devide and Conquer2 : "+(end2-start2));
     System.out.println("==========================================");
 }    
 }
