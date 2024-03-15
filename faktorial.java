@@ -7,10 +7,10 @@ public class faktorial {
  public int faktorialBF(int n){
     int fakto = 1 ;
     int  i = 1;
-    while (i<=n){
-      fakto = fakto*i;;
+    do{
+      fakto = fakto*i;
       i++;
-    }
+    }while (i<=n);
     return fakto;
  }
  public int faktorialDC(int n){
