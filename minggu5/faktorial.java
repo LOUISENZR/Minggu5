@@ -1,4 +1,4 @@
-package Minggu5;
+package minggu5;
 public class faktorial {
  faktorial(){
 

@@ -1,17 +1,17 @@
-package Minggu5;
+package minggu5;
 public class pangkat {
     pangkat(){
 
     }
     public int nilai, pangkat;
 
-    public int pangkatBF(int a, int b){
+    public int pangkatBF(int a, int n){
         int hasil = 1;
-        for (int i =0; i<n; i++){
+        for (int i =0; i< n; i++){
             hasil = hasil*a;
         }return hasil;
     }
-    public int pangkatDC(int a, int b){
+    public int pangkatDC(int a, int n){
         if (n==0){
             return 1;
         }else{
@@ -21,5 +21,9 @@ public class pangkat {
                 return (pangkatDC(a, n/2) * pangkatDC(a, n/2));
             }
         }
+    }
+    pangkat (int x, int y){
+        nilai = x;
+        pangkat = y;
     }
 }
